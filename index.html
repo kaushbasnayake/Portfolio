@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himaya | Portfolio</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo-area">
+                <img src="src/images/a2.png" alt="Logo" class="nav-logo">
+                <span class="logo-text">HIMAYA</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="greeting">Hello, I'm Himaya</span>
+                    <h1>Front End <span class="highlight">Developer</span></h1>
+                    <p class="hero-desc">I am a developer who loves turning complex problems into beautiful, simple designs. I specialize in building high-performance web applications that matter.</p>
+                    <div class="hero-action">
+                        <a href="#projects" class="btn primary">View My Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="src/images/a1.png" alt="Introduction" class="main-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>E-Commerce Site</h3>
+                            <p>A modern shopping experience built with high-speed performance, secure payments, and a sleek user interface.</p>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Task App</h3>
+                            <p>A productivity tool designed for busy professionals to organize workflows and track tasks in real-time.</p>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>With years of experience in both frontend and backend development, I focus on creating high-performance web applications that provide a seamless user experience. I believe that clean code and user-centric design are the keys to a successful digital product.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-contact">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h2>Let's Connect</h2>
+                        <div class="contact-details">
+                            <p><i class="fas fa-envelope"></i> hello@himaya.com</p>
+                            <p><i class="fas fa-location-dot"></i> Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Himaya. All rights reserved.</p>
+    </footer>
+
+    <script src="src/styles/scripts/main.js"></script>
+</body>
+</html>

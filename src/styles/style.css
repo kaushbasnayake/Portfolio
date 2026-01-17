@@ -1,0 +1,111 @@
+:root {
+    --primary-teal: #1abc9c;
+    --light-teal-bg: #e8f8f5;
+    --dark-navy: #1a252f;
+    --slate-gray: #2c3e50;
+    --soft-white: #ecf0f1;
+    --text-dark: #333;
+    --text-light: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+header {
+    background: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+nav { display: flex; justify-content: space-between; width: 100%; align-items: center; }
+.logo-area { display: flex; align-items: center; gap: 10px; }
+.nav-logo { height: 50px; border-radius: 4px; }
+.logo-text { font-weight: bold; font-size: 1.6rem; color: var(--dark-navy); }
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { text-decoration: none; color: var(--dark-navy); font-weight: 600; font-size: 1.1rem; }
+
+section { padding: 120px 0; min-height: 90vh; display: flex; align-items: center; }
+
+/* 1. HOME SECTION */
+.section-home { background-color: var(--soft-white); color: var(--text-dark); }
+.hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; }
+.greeting { font-size: 1.4rem; color: var(--primary-teal); font-weight: 600; }
+h1 { font-size: 4.5rem; line-height: 1.1; margin: 20px 0; }
+.highlight { color: var(--primary-teal); }
+.hero-desc { font-size: 1.5rem; line-height: 1.6; margin-bottom: 40px; color: #555; }
+.main-img { width: 100%; border-radius: 100px; border-bottom: 12px solid var(--primary-teal); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+/* 2. PROJECTS SECTION */
+.section-projects { background-color: var(--dark-navy); color: var(--text-light); }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-top: 60px; }
+.project-card { 
+    background: rgba(255,255,255,0.08); 
+    padding: 50px; 
+    border-radius: 20px; 
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+.project-info h3 { font-size: 2.2rem; margin-bottom: 20px; color: var(--primary-teal); }
+.project-info p { font-size: 1.3rem; line-height: 1.6; color: #ecf0f1; margin-bottom: 30px; }
+.tag-container { margin-top: auto; }
+.tag { background: var(--primary-teal); color: white; padding: 10px 20px; border-radius: 8px; font-size: 1rem; font-weight: bold; }
+
+/* 3. ABOUT SECTION */
+.section-about { background-color: var(--light-teal-bg); color: var(--text-dark); }
+.about-content p { font-size: 2rem; line-height: 1.7; max-width: 1000px; }
+
+/* 4. CONTACT SECTION (FIXED "LETS CONNECT" PART) */
+.section-contact { background-color: var(--slate-gray); color: var(--text-light); }
+.contact-card { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 80px; 
+    width: 100%; 
+    align-items: start;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-info h2 { font-size: 4rem; margin-bottom: 30px; color: var(--primary-teal); }
+.contact-details p { 
+    font-size: 1.6rem; 
+    margin-bottom: 25px; 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+.contact-details i { color: var(--primary-teal); width: 30px; }
+
+/* Form Styling */
+.contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+}
+.contact-form input, .contact-form textarea { 
+    width: 100%; 
+    padding: 18px; 
+    margin-bottom: 20px; 
+    border: 1px solid rgba(255,255,255,0.1); 
+    border-radius: 10px; 
+    font-size: 1.1rem;
+    background: #fff;
+    color: #333;
+}
+
+.btn { padding: 18px 45px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.2rem; cursor: pointer; border: none; transition: 0.3s; width: fit-content; }
+.btn.primary { background: var(--primary-teal); color: white; }
+.btn.primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+footer { background: #111; color: white; text-align: center; padding: 40px 0; font-size: 1.1rem; }
+.section-title { font-size: 3.5rem; margin-bottom: 40px; }
