@@ -42,7 +42,7 @@ Prerequisites
 •	Node.js ( v25.2.1)
 •	Git 
 Installation 
-1.	Clone the repository: git clone [https://github.com/kaushbasnayake/Portfolio] 
+1.	Clone the repository: git clone [https://github.com/kaushbasnayake/Portfolio.git] 
 2.	Navigate to project directory: cd [Portfolio website] 
 3.	Install dependencies: npm install 
 4.	Run development server: npm run dev 
@@ -50,5 +50,7 @@ Deployment Process
 The deployment is fully automated through GitHub Actions. Every push to the 'main' branch triggers the deployment workflow, which builds the project and deploys it to the cloud platform.
 
 Challenges Faced 
-•	Merge Conflict Resolution:  We created and resolved a merge conflict to practice professional Git collaboration workflows.
-•	CI/CD Configuration:  Setting up GitHub action workflow files to ensure successful builds and deployments was a significant learning challenge.
+• We didn't have a device to develop the frontend. We did it after the other group finished.
+•Merge Conflict Resolution:  We created and resolved a merge conflict to practice professional Git collaboration workflows.
+•CI/CD Configuration:  Setting up GitHub action workflow files to ensure successful builds and deployments was a significant learning challenge.
+
