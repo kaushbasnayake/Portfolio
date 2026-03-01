@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: professional_portfolio_container
     ports:
-      - "8080:80" # Web browser eken 8080 port eken balanna puluwan
+      - "8080:80" # Can see 8080 port in Web browser  
     
     # Performance: Resource management (CPU/Memory limits)
     deploy:
@@ -15,7 +15,7 @@ services:
           cpus: '0.25'
           memory: 128M
     
-    # Reliability: Container eka hariyata wadada kiyala check kireema
+    # Reliability: To check if the Container works propearly
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost/"]
       interval: 30s
